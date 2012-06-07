@@ -29,7 +29,7 @@ RSYNC = {
 # friend links linux
 LINKS = {
     #title: url
-    'kevinlynx': 'http://codemacro.com',
+    'python': 'http://www.python.org',
     'Fedoraproject': 'http://fedoraproject.org',
 }
 
