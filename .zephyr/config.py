@@ -23,7 +23,7 @@ REPO = {
 # remote rsync server list
 RSYNC = {
     #name: url
-    'myvps': 'root@codedelight:/var/www'
+    'myvps': 'root@codedelight:/var/www/'
 }
 
 # friend links linux
