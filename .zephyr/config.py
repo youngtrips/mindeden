@@ -32,5 +32,6 @@ LINKS = {
     'python': 'http://www.python.org',
     'Fedoraproject': 'http://fedoraproject.org',
     'Tuz@github': 'https://github.com/youngtrips',
+    'Kevinlynx' : 'http://codemacro.com',
 }
 
