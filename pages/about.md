@@ -1,5 +1,5 @@
 ---
-layout: page_index
+layout: page
 title: About
 ---
 
