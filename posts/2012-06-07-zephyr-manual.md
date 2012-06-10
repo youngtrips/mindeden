@@ -7,14 +7,16 @@ tags:
 ---
 
 
-==zephyr项目地址
+zephyr项目地址
+--------------
 
 目前项目托管在:
 
     https://github.com/youngtrips/zephyr
 
 
-==安装Zephyr
+安装Zephyr
+----------
 
 Zephyr代码现在托管在github.com上, 你只需要在shell中执行:
 
@@ -36,7 +38,8 @@ zephyr依赖python-mako, python-yaml, python-markdown等开发库, 在ubuntu中�
 
 3. [python-yaml](http://pyyaml.org/)
 
-==创建博客
+创建博客
+--------
 
 在shell执行命令, 例如:
 
@@ -50,7 +53,8 @@ zephyr会在blog_path中创建工作目录:
 
 3. pages: 存放自定义页面
 
-==配置博客
+配置博客
+--------
 
 打开博客目录下.zephyr/config.py编辑配置型项, 配置文件格式如下:
 
@@ -94,7 +98,8 @@ zephyr会在blog_path中创建工作目录:
 配置文件是python脚本,编辑时请注意python语法.
 
 
-==新建日志
+新建日志
+--------
 
 执行shell命令, 例如:
 
@@ -113,13 +118,15 @@ zephyr会在blog_path中创建工作目录:
 4. category 分类
 
 
-==发布站点
+发布站点
+--------
 
 在配置文件config.py中设置好rsync同步地址, 在博客工作目录根目录下执行以下命令:
 
     zephyr publish
 
-==模板自定义
+模板自定义
+----------
 
 zephyr是支持模板自定义的, 目前只有一个default模板, 详细的模板制作文档稍候补上.
 
