@@ -5,7 +5,7 @@ SITE = {
     'description': 'Somewhere to keep my iears',
     'url': 'http://mindeden.com',
     'pagelimit': 10,
-    'theme': 'default',
+    'theme': 'mindeden',
     'disqus_shortname': 'mindeden',
 }
 

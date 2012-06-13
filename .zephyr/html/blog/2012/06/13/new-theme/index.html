@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>MindEden &raquo; About zephyr</title>
+    <title>MindEden &raquo; 新主题(mindeden)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -50,20 +50,66 @@
 
 <article id="post-166" class="post-166 post type-post status-publish format-standard hentry category-uncategorized" role="article">
     <header class="entry-header">
-        <h2 class="entry-title"><a href="#" rel="bookmark">About zephyr</a></h2>
+        <h2 class="entry-title"><a href="#" rel="bookmark">新主题(mindeden)</a></h2>
         <div class="entry-meta">
-            <span class="label">Publish: 2012-06-06 15:02:46</span>
+            <span class="label">Publish: 2012-06-13 23:09:45</span>
             <span class="label">Category: <a href='http://mindeden.com/categories/zephyr/'>zephyr</a></span>
         </div><!-- .entry-meta -->
     </header><!-- .entry-header -->
     <div class="entry-content">
-        <h2>What</h2>
-<p>zephyr, 是一个python实现的基于markdown格式的个人博客静态站点生成器, 依赖Mako解析模板.
-功能与Jekyll类似, 支持disq评论, 支持模板更换(当前模板是基于typecho.org模板修改的)., 但目前还比较简陋, 很多功能尚未实现.</p>
-<h2>Why</h2>
-<p>有人一定会说, Jeklly都那么强大了, 还费什么劲去整别的. 其实呢, 正如About里所说, 我是一个喜欢折腾的人, 再加上不想为了用Jeklly装一大堆不喜欢的ruby包;</p>
-<h2>How to install zephyr</h2>
-<p>目前zephyr处于开发测试阶段, 很多功能不完善, 不如发布站点到服务器上现在我暂时直接用rsync命令去同步远程目录, 稍后功能完善后会详细介绍安装方法及开发所有源码.</p>
+        <p>之前博客的主题是修改至typecho, 这两天看了下twitter bootstrap, 决定自己写个主题. mindeden(主题名)是基于twitter bootstrap写的, 整个模板文件结构为:</p>
+<pre><code>|-- footer.html
+|-- header.html
+|-- images
+|   `-- mindeden-logo.png
+|-- page.html
+|-- post.html
+|-- post_list.html
+|-- sidebar.html
+|-- stylesheets
+|   |-- css
+|   |   |-- bootstrap.css
+|   |   `-- bootstrap-responsive.css
+|   |-- img
+|   |   |-- glyphicons-halflings.png
+|   |   `-- glyphicons-halflings-white.png
+|   `-- js
+|       |-- application.js
+|       |-- bootstrap-alert.js
+|       |-- bootstrap-button.js
+|       |-- bootstrap-carousel.js
+|       |-- bootstrap-collapse.js
+|       |-- bootstrap-dropdown.js
+|       |-- bootstrap.js
+|       |-- bootstrap.min.js
+|       |-- bootstrap-modal.js
+|       |-- bootstrap-popover.js
+|       |-- bootstrap-scrollspy.js
+|       |-- bootstrap-tab.js
+|       |-- bootstrap-tooltip.js
+|       |-- bootstrap-transition.js
+|       |-- bootstrap-typeahead.js
+|       |-- google-code-prettify
+|       |   |-- prettify.css
+|       |   `-- prettify.js
+|       |-- jquery.js
+|       `-- README.md
+</code></pre>
+<p>其中每个主题都必须包含的有:</p>
+<ol>
+<li>post.html 每篇文章显示模板</li>
+<li>page.html 自定义页码显示模板</li>
+<li>post_list.html 所有需要显示文章列表的模板(包含首页, 分类, 标记, 存档等)</li>
+<li>images 存储相关图片目录</li>
+<li>stylesheets 存储css相关目录</li>
+</ol>
+<p>zephyr是基于mako模板解析系统, 所有主题模板文件里自然使用mako标记语法, zephyr提供给模板文件的对象有:</p>
+<ol>
+<li>site (站点对象, 包括站点url, name, author)</li>
+<li>post (文章对象, 包括时间, 分类, 具体内容等)</li>
+<li>page (当前页对象, 这里的页不是指自定义页码的页对象, 包含当然页标题, url等)</li>
+</ol>
+<p>这些对象具体的属性说明稍后再加上.</p>
     </div><!-- .entry-content -->
 </article><!-- #post-166 -->
 
