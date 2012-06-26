@@ -33,5 +33,6 @@ LINKS = {
     'Fedoraproject': 'http://fedoraproject.org',
     'Tuz@github': 'https://github.com/youngtrips',
     'Kevinlynx' : 'http://codemacro.com',
+    '5Linux' : 'http://5linux.yo2.cn'
 }
 
